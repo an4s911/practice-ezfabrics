@@ -9,7 +9,7 @@ export default function Logo({ moreBold = false }) {
             <p
                 className={`min-w-[98px] max-w-[98px] font-${
                     moreBold ? "bold" : "semibold"
-                } leading-none text-sm`}
+                } leading-none text-sm whitespace-break-spaces`}
             >
                 Ez Fabrics Template
             </p>
