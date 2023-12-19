@@ -7,15 +7,17 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.menu-line {
-    @apply w-6 h-1 bg-black rounded-md;
+.nav-menu-enter {
+    @apply opacity-50 translate-x-[15%];
 }
-
-.close-btn-line {
-    @apply absolute rounded-sm;
-
-    --height: 0.375rem;
-    --height-by-2: calc(var(--height) / 2);
-    height: var(--height);
-    top: calc(50% - var(--height-by-2));
+.nav-menu-enter-active {
+    @apply opacity-100 translate-x-0 transition-all;
+    transition-duration: 500ms;
+}
+.nav-menu-exit {
+    @apply opacity-100 translate-x-0;
+}
+.nav-menu-exit-active {
+    @apply opacity-0 translate-x-[15%] transition-all;
+    transition-duration: 500ms;
 }

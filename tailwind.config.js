@@ -3,10 +3,15 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         extend: {
-            gridTemplateColumns: {
-                "c-2": "1fr min-content",
+            keyframes: {
+                "slide-left-in": {
+                    "0%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
             },
-            keyframes: {},
+            animation: {
+                "slide-left-in": "slide-left-in 1s ease-out",
+            },
         },
     },
     plugins: [],
