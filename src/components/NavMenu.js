@@ -27,10 +27,7 @@ export default function NavMenu({ open, closeClick }) {
 
     function CrossIcon() {
         return (
-            <div
-                onClick={closeClick}
-                className="p-1 cursor-pointer no-tap-highlight"
-            >
+            <div onClick={closeClick} className="p-1 cursor-pointer">
                 <div className="relative w-7 h-5">
                     <CrossIconLine rotateClass="rotate-45" />
                     <CrossIconLine rotateClass="-rotate-45" />

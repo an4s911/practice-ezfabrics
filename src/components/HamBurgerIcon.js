@@ -22,7 +22,7 @@ export default function HamBurgerIcon({ size, onClick }) {
             style={{
                 ...styles,
             }}
-            className="-mr-1 p-1 box-content cursor-pointer flex flex-col justify-between md:hidden outline-none no-tap-highlight"
+            className="-mr-1 p-1 box-content cursor-pointer flex flex-col justify-between md:hidden outline-none"
             onClick={onClick}
         >
             <IconLine height={lineHeight} />
