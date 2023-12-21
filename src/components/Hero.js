@@ -2,8 +2,8 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 export default function Hero() {
     return (
         <>
-            <div className="w-full min-h-screen flex flex-col pl-5 bg-[#dfcefb] gap-8">
-                <div className="leading-none gap-12 flex py-[100px] flex-col">
+            <div className="w-full min-h-screen flex flex-col sm:grid sm:grid-cols-2 sm:gap-0 sm:min-h-full sm:max-h-[600px] md:pl-10 pl-5 bg-[#dfcefb] gap-8">
+                <div className="min-w-[280px] flex-grow-0 leading-none gap-12 flex place-content-center sm:mr-2 justify-center py-[100px] flex-col">
                     <h1 className="text-[50px] font-bold self-start min-h-[110px]">
                         Create your own design
                     </h1>
@@ -15,9 +15,9 @@ export default function Hero() {
                         <FaLongArrowAltRight size={"40px"} />
                     </div>
                 </div>
-                <div>
+                <div className="flex-grow min-w-[320px]">
                     <div
-                        className="min-h-[600px] bg-hero bg-center bg-cover bg-no-repeat h-96"
+                        className="w-full min-h-[600px] bg-hero bg-center bg-cover bg-no-repeat h-96"
                         alt=""
                     ></div>
                 </div>
