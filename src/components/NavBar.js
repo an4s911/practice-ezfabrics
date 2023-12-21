@@ -18,7 +18,7 @@ export default function NavBar() {
 
     return (
         <div className="md:flex md:w-max md:justify-between md:gap-6 whitespace-nowrap">
-            <HamBurgerIcon size={15} onClick={() => setOpen(true)} />
+            <HamBurgerIcon size={16} onClick={() => setOpen(true)} />
             <NavMenu open={open} closeClick={() => setOpen(false)} />
 
             <NavLink href={"/"}>Home</NavLink>
